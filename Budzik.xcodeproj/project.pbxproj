@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3ED04BE52616F1AE00F77E9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04BE42616F1AE00F77E9A /* AppDelegate.swift */; };
+		3ED04BE72616F1AE00F77E9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04BE62616F1AE00F77E9A /* SceneDelegate.swift */; };
+		3ED04BE92616F1AE00F77E9A /* AlarmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04BE82616F1AE00F77E9A /* AlarmListViewController.swift */; };
+		3ED04BEC2616F1AE00F77E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04BEA2616F1AE00F77E9A /* Main.storyboard */; };
+		3ED04BEF2616F1AE00F77E9A /* Budzik.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04BED2616F1AE00F77E9A /* Budzik.xcdatamodeld */; };
+		3ED04BF12616F1B200F77E9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04BF02616F1B200F77E9A /* Assets.xcassets */; };
+		3ED04BF42616F1B200F77E9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04BF22616F1B200F77E9A /* LaunchScreen.storyboard */; };
+		3ED04BFF2616FEB700F77E9A /* UITableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04BFE2616FEB700F77E9A /* UITableViews.swift */; };
+		3ED04C032617563E00F77E9A /* AlarmEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C022617563E00F77E9A /* AlarmEditTableViewController.swift */; };
+		3ED04C06261AF11000F77E9A /* SoundListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C05261AF11000F77E9A /* SoundListTableViewController.swift */; };
+		3ED04C0A261EB4AF00F77E9A /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C08261EB4AE00F77E9A /* SoundTableViewCell.swift */; };
+		3ED04C0B261EB4AF00F77E9A /* SoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04C09261EB4AE00F77E9A /* SoundTableViewCell.xib */; };
+		3ED04C15261EC06100F77E9A /* New-beginning.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04C14261EC06100F77E9A /* New-beginning.m4a */; };
+		3ED04C18261EC13100F77E9A /* Ukelele.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04C17261EC13100F77E9A /* Ukelele.m4a */; };
+		3ED04C1B261EC19E00F77E9A /* Creative.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04C1A261EC19E00F77E9A /* Creative.m4a */; };
+		3ED04C1E261EC1E900F77E9A /* Little.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04C1D261EC1E900F77E9A /* Little.m4a */; };
+		3ED04C21261EC4EE00F77E9A /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C20261EC4EE00F77E9A /* Sounds.swift */; };
+		3ED04C24261EC55400F77E9A /* SoundDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C23261EC55400F77E9A /* SoundDB.swift */; };
+		3ED04C27261EDA3B00F77E9A /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C26261EDA3B00F77E9A /* SoundManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3ED04BE12616F1AE00F77E9A /* Budzik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budzik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED04BE42616F1AE00F77E9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3ED04BE62616F1AE00F77E9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3ED04BE82616F1AE00F77E9A /* AlarmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListViewController.swift; sourceTree = "<group>"; };
+		3ED04BEB2616F1AE00F77E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ED04BEE2616F1AE00F77E9A /* Budzik.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Budzik.xcdatamodel; sourceTree = "<group>"; };
+		3ED04BF02616F1B200F77E9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ED04BF32616F1B200F77E9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3ED04BF52616F1B200F77E9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED04BFE2616FEB700F77E9A /* UITableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViews.swift; sourceTree = "<group>"; };
+		3ED04C022617563E00F77E9A /* AlarmEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmEditTableViewController.swift; sourceTree = "<group>"; };
+		3ED04C05261AF11000F77E9A /* SoundListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListTableViewController.swift; sourceTree = "<group>"; };
+		3ED04C08261EB4AE00F77E9A /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
+		3ED04C09261EB4AE00F77E9A /* SoundTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SoundTableViewCell.xib; sourceTree = "<group>"; };
+		3ED04C14261EC06100F77E9A /* New-beginning.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "New-beginning.m4a"; sourceTree = "<group>"; };
+		3ED04C17261EC13100F77E9A /* Ukelele.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ukelele.m4a; sourceTree = "<group>"; };
+		3ED04C1A261EC19E00F77E9A /* Creative.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Creative.m4a; sourceTree = "<group>"; };
+		3ED04C1D261EC1E900F77E9A /* Little.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Little.m4a; sourceTree = "<group>"; };
+		3ED04C20261EC4EE00F77E9A /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		3ED04C23261EC55400F77E9A /* SoundDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundDB.swift; sourceTree = "<group>"; };
+		3ED04C26261EDA3B00F77E9A /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ED04BDE2616F1AE00F77E9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ED04BD82616F1AE00F77E9A = {
+			isa = PBXGroup;
+			children = (
+				3ED04BE32616F1AE00F77E9A /* Budzik */,
+				3ED04BE22616F1AE00F77E9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3ED04BE22616F1AE00F77E9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ED04BE12616F1AE00F77E9A /* Budzik.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ED04BE32616F1AE00F77E9A /* Budzik */ = {
+			isa = PBXGroup;
+			children = (
+				3ED04C10261EBB1E00F77E9A /* Models */,
+				3ED04C0E261EB4E100F77E9A /* Controllers */,
+				3ED04C0D261EB4DA00F77E9A /* Cells */,
+				3ED04BFD2616FE4D00F77E9A /* Extensions */,
+				3ED04BE42616F1AE00F77E9A /* AppDelegate.swift */,
+				3ED04BE62616F1AE00F77E9A /* SceneDelegate.swift */,
+				3ED04BEA2616F1AE00F77E9A /* Main.storyboard */,
+				3ED04C11261EBB7D00F77E9A /* Resources */,
+				3ED04BF22616F1B200F77E9A /* LaunchScreen.storyboard */,
+				3ED04BF52616F1B200F77E9A /* Info.plist */,
+				3ED04BED2616F1AE00F77E9A /* Budzik.xcdatamodeld */,
+			);
+			path = Budzik;
+			sourceTree = "<group>";
+		};
+		3ED04BFD2616FE4D00F77E9A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3ED04BFE2616FEB700F77E9A /* UITableViews.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3ED04C0D261EB4DA00F77E9A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3ED04C08261EB4AE00F77E9A /* SoundTableViewCell.swift */,
+				3ED04C09261EB4AE00F77E9A /* SoundTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3ED04C0E261EB4E100F77E9A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3ED04C05261AF11000F77E9A /* SoundListTableViewController.swift */,
+				3ED04BE82616F1AE00F77E9A /* AlarmListViewController.swift */,
+				3ED04C022617563E00F77E9A /* AlarmEditTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3ED04C10261EBB1E00F77E9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3ED04C20261EC4EE00F77E9A /* Sounds.swift */,
+				3ED04C23261EC55400F77E9A /* SoundDB.swift */,
+				3ED04C26261EDA3B00F77E9A /* SoundManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3ED04C11261EBB7D00F77E9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3ED04C12261EBB9800F77E9A /* Sounds */,
+				3ED04BF02616F1B200F77E9A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3ED04C12261EBB9800F77E9A /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3ED04C14261EC06100F77E9A /* New-beginning.m4a */,
+				3ED04C17261EC13100F77E9A /* Ukelele.m4a */,
+				3ED04C1A261EC19E00F77E9A /* Creative.m4a */,
+				3ED04C1D261EC1E900F77E9A /* Little.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ED04BE02616F1AE00F77E9A /* Budzik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED04BF82616F1B200F77E9A /* Build configuration list for PBXNativeTarget "Budzik" */;
+			buildPhases = (
+				3ED04BDD2616F1AE00F77E9A /* Sources */,
+				3ED04BDE2616F1AE00F77E9A /* Frameworks */,
+				3ED04BDF2616F1AE00F77E9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Budzik;
+			productName = Budzik;
+			productReference = 3ED04BE12616F1AE00F77E9A /* Budzik.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ED04BD92616F1AE00F77E9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					3ED04BE02616F1AE00F77E9A = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 3ED04BDC2616F1AE00F77E9A /* Build configuration list for PBXProject "Budzik" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ED04BD82616F1AE00F77E9A;
+			productRefGroup = 3ED04BE22616F1AE00F77E9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ED04BE02616F1AE00F77E9A /* Budzik */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ED04BDF2616F1AE00F77E9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED04C1E261EC1E900F77E9A /* Little.m4a in Resources */,
+				3ED04C18261EC13100F77E9A /* Ukelele.m4a in Resources */,
+				3ED04BF42616F1B200F77E9A /* LaunchScreen.storyboard in Resources */,
+				3ED04BF12616F1B200F77E9A /* Assets.xcassets in Resources */,
+				3ED04C15261EC06100F77E9A /* New-beginning.m4a in Resources */,
+				3ED04C1B261EC19E00F77E9A /* Creative.m4a in Resources */,
+				3ED04BEC2616F1AE00F77E9A /* Main.storyboard in Resources */,
+				3ED04C0B261EB4AF00F77E9A /* SoundTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ED04BDD2616F1AE00F77E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED04BEF2616F1AE00F77E9A /* Budzik.xcdatamodeld in Sources */,
+				3ED04C032617563E00F77E9A /* AlarmEditTableViewController.swift in Sources */,
+				3ED04BE92616F1AE00F77E9A /* AlarmListViewController.swift in Sources */,
+				3ED04C24261EC55400F77E9A /* SoundDB.swift in Sources */,
+				3ED04BE52616F1AE00F77E9A /* AppDelegate.swift in Sources */,
+				3ED04BE72616F1AE00F77E9A /* SceneDelegate.swift in Sources */,
+				3ED04BFF2616FEB700F77E9A /* UITableViews.swift in Sources */,
+				3ED04C21261EC4EE00F77E9A /* Sounds.swift in Sources */,
+				3ED04C06261AF11000F77E9A /* SoundListTableViewController.swift in Sources */,
+				3ED04C27261EDA3B00F77E9A /* SoundManager.swift in Sources */,
+				3ED04C0A261EB4AF00F77E9A /* SoundTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3ED04BEA2616F1AE00F77E9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED04BEB2616F1AE00F77E9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ED04BF22616F1B200F77E9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED04BF32616F1B200F77E9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ED04BF62616F1B200F77E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3ED04BF72616F1B200F77E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ED04BF92616F1B200F77E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJDR3QJ2K;
+				INFOPLIST_FILE = Budzik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miguelPelayo.Budzik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ED04BFA2616F1B200F77E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRJDR3QJ2K;
+				INFOPLIST_FILE = Budzik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.miguelPelayo.Budzik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ED04BDC2616F1AE00F77E9A /* Build configuration list for PBXProject "Budzik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED04BF62616F1B200F77E9A /* Debug */,
+				3ED04BF72616F1B200F77E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED04BF82616F1B200F77E9A /* Build configuration list for PBXNativeTarget "Budzik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED04BF92616F1B200F77E9A /* Debug */,
+				3ED04BFA2616F1B200F77E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3ED04BED2616F1AE00F77E9A /* Budzik.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3ED04BEE2616F1AE00F77E9A /* Budzik.xcdatamodel */,
+			);
+			currentVersion = 3ED04BEE2616F1AE00F77E9A /* Budzik.xcdatamodel */;
+			path = Budzik.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3ED04BD92616F1AE00F77E9A /* Project object */;
+}
