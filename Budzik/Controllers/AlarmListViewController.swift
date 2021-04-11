@@ -10,6 +10,7 @@ import UIKit
 class AlarmListViewController: UIViewController {
     
     var savedAlarms = [String]()
+    var time = String()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,6 +21,8 @@ class AlarmListViewController: UIViewController {
        //savedAlarms = ["Alarma 1", "Alarma 2"]
         
         tableView.hideCells()
+        
+        tableView.register(UINib(nibName: "AlarmTableViewCell", bundle: nil), forCellReuseIdentifier: "alarmCell")
         
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
      
@@ -40,11 +43,11 @@ extension AlarmListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "alarmCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "alarmCell", for: indexPath) as! AlarmTableViewCell
         
-        cell.textLabel?.text = savedAlarms[indexPath.row]
+        cell.daysLabel.text = savedAlarms[indexPath.row]
         
-        
+        cell.timeLabel.text = time 
         
         return cell
     }

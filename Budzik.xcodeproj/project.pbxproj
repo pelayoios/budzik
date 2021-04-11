@@ -26,6 +26,8 @@
 		3ED04C21261EC4EE00F77E9A /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C20261EC4EE00F77E9A /* Sounds.swift */; };
 		3ED04C24261EC55400F77E9A /* SoundDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C23261EC55400F77E9A /* SoundDB.swift */; };
 		3ED04C27261EDA3B00F77E9A /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C26261EDA3B00F77E9A /* SoundManager.swift */; };
+		3ED04C2C2622F07C00F77E9A /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED04C2A2622F07C00F77E9A /* AlarmTableViewCell.swift */; };
+		3ED04C2D2622F07C00F77E9A /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED04C2B2622F07C00F77E9A /* AlarmTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		3ED04C20261EC4EE00F77E9A /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		3ED04C23261EC55400F77E9A /* SoundDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundDB.swift; sourceTree = "<group>"; };
 		3ED04C26261EDA3B00F77E9A /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		3ED04C2A2622F07C00F77E9A /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		3ED04C2B2622F07C00F77E9A /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 			children = (
 				3ED04C08261EB4AE00F77E9A /* SoundTableViewCell.swift */,
 				3ED04C09261EB4AE00F77E9A /* SoundTableViewCell.xib */,
+				3ED04C2A2622F07C00F77E9A /* AlarmTableViewCell.swift */,
+				3ED04C2B2622F07C00F77E9A /* AlarmTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				3ED04C18261EC13100F77E9A /* Ukelele.m4a in Resources */,
 				3ED04BF42616F1B200F77E9A /* LaunchScreen.storyboard in Resources */,
 				3ED04BF12616F1B200F77E9A /* Assets.xcassets in Resources */,
+				3ED04C2D2622F07C00F77E9A /* AlarmTableViewCell.xib in Resources */,
 				3ED04C15261EC06100F77E9A /* New-beginning.m4a in Resources */,
 				3ED04C1B261EC19E00F77E9A /* Creative.m4a in Resources */,
 				3ED04BEC2616F1AE00F77E9A /* Main.storyboard in Resources */,
@@ -240,6 +247,7 @@
 				3ED04C06261AF11000F77E9A /* SoundListTableViewController.swift in Sources */,
 				3ED04C27261EDA3B00F77E9A /* SoundManager.swift in Sources */,
 				3ED04C0A261EB4AF00F77E9A /* SoundTableViewCell.swift in Sources */,
+				3ED04C2C2622F07C00F77E9A /* AlarmTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

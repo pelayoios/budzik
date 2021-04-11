@@ -24,6 +24,7 @@ class AlarmEditTableViewController: UITableViewController {
     let weekend = [6: "Sat", 7: "Sun"]
     let weekday = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri"]
     
+    var dataToPass = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +66,26 @@ class AlarmEditTableViewController: UITableViewController {
     @IBAction func snoozeBtnChanged(_ sender: UISwitch) {
     }
     
+
+    
     @IBAction func saveBtnPressed(_ sender: UIButton) {
+        let registrationView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "alarmyListVC") as! AlarmListViewController
+        if let repeatData = repeatDaysLabel.text {
+            dataToPass.append(repeatData)
+        }
+        
+        let timeFormatter = DateFormatter()
+        timeFormatter.timeStyle = DateFormatter.Style.short
+
+        let strDate = timeFormatter.string(from: datePicker.date)
+        
+        registrationView.time = strDate
+        
+        print(dataToPass)
+        registrationView.savedAlarms.append(contentsOf: dataToPass)
+       
+        navigationController?.pushViewController(registrationView, animated: true)
+        
     }
     
   
