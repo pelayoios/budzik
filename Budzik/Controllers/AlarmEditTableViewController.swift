@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AlarmEditTableViewController: UITableViewController {
     
@@ -24,7 +25,10 @@ class AlarmEditTableViewController: UITableViewController {
     let weekend = [6: "Sat", 7: "Sun"]
     let weekday = [1: "Mon", 2: "Tue", 3: "Wed", 4: "Thu", 5: "Fri"]
     
-    var dataToPass = [String]()
+   var alarmListVC = AlarmListViewController()
+    var alarm = Alarm()
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,8 @@ class AlarmEditTableViewController: UITableViewController {
         tableView.dataSource = self
         
         datePicker.datePickerMode = .time
+        
+        loadAlarms()
         
     }
 
@@ -70,20 +76,22 @@ class AlarmEditTableViewController: UITableViewController {
     
     @IBAction func saveBtnPressed(_ sender: UIButton) {
         let registrationView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "alarmyListVC") as! AlarmListViewController
-        if let repeatData = repeatDaysLabel.text {
-            dataToPass.append(repeatData)
-        }
-        
+       
         let timeFormatter = DateFormatter()
         timeFormatter.timeStyle = DateFormatter.Style.short
 
         let strDate = timeFormatter.string(from: datePicker.date)
         
-        registrationView.time = strDate
+
+        let newAlarm = Alarm(context: self.context)
+        newAlarm.date = strDate
+        newAlarm.days = repeatDaysLabel.text
+        AlarmListViewController.savedAlarms.append(newAlarm)
         
-        print(dataToPass)
-        registrationView.savedAlarms.append(contentsOf: dataToPass)
+        self.saveAlarms()
+        
        
+        
         navigationController?.pushViewController(registrationView, animated: true)
         
     }
@@ -112,5 +120,27 @@ extension AlarmEditTableViewController {
         if dictionary.isEmpty {
             label.text = "None"
         }
+    }
+    
+    func saveAlarms() {
+        
+        do {
+            try context.save()
+        }catch {
+            print("Error saving context \(error)")
+        }
+        self.tableView.reloadData()
+    }
+    
+    func loadAlarms() {
+        
+        let request: NSFetchRequest<Alarm> = Alarm.fetchRequest()
+        do {
+            AlarmListViewController.savedAlarms =  try context.fetch(request)
+        }catch {
+            print("Error loading context \(error)")
+        }
+        
+        
     }
 }

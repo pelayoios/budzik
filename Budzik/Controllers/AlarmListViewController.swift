@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import CoreData
 
 class AlarmListViewController: UIViewController {
     
-    var savedAlarms = [String]()
+    
+   static var savedAlarms = [Alarm]()
     var time = String()
+ 
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -18,25 +21,34 @@ class AlarmListViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = self
         
-       //savedAlarms = ["Alarma 1", "Alarma 2"]
+        
         
         tableView.hideCells()
         
         tableView.register(UINib(nibName: "AlarmTableViewCell", bundle: nil), forCellReuseIdentifier: "alarmCell")
         
         self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        
+        let alarmEditVC = AlarmEditTableViewController()
+        alarmEditVC.loadAlarms()
      
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        tableView.reloadData()
+        
+    }
+   
 
 }
 
 extension AlarmListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if savedAlarms.count == 0 {
+        if AlarmListViewController.savedAlarms.count == 0 {
             tableView.noAlarmImage(image: UIImage(named: "noAlarm")!)
         }
-            return savedAlarms.count
+        return AlarmListViewController.savedAlarms.count
         
         
     }
@@ -45,11 +57,20 @@ extension AlarmListViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "alarmCell", for: indexPath) as! AlarmTableViewCell
         
-        cell.daysLabel.text = savedAlarms[indexPath.row]
+        cell.daysLabel.text = AlarmListViewController.savedAlarms[indexPath.row].days
         
-        cell.timeLabel.text = time 
+        cell.timeLabel.text = AlarmListViewController.savedAlarms[indexPath.row].date
         
+      
         return cell
     }
+    
+  
+    
+    
+    
+    
+    
+    
 }
 
